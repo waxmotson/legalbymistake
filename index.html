@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="https://waxstatic.onrender.com/inkdin%20rethink%20the%20bs.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta property="og:title" content="LEGAL BY MISTAKE">
+  <meta property="og:description" content="all of the HSC Legal Studies multiple choice questions">
+
+  <title>LEGAL BY MISTAKE</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', Times, serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+      background-color: rgb(29, 32, 31);
+      color: white;
+    }
+    h1 {
+      font-size: 3rem;
+      word-break: break-all;
+      color: aqua;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+    h3 {
+      font-style: italic;
+      color: burlywood;
+    }
+    img {
+      max-width: 100%;
+      max-height: 40vh;
+      border: 1px solid #ccc;
+      margin: 20px 0;
+    }
+    .buttons {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      margin: 20px 0;
+    }
+    button {
+      font-size: 1.4rem;
+      padding: 12px 28px;
+      cursor: pointer;
+    }
+    #result {
+      font-size: 2rem;
+      margin-top: 24px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <h2>LEGAL BY MISTAKE</h2>
+    <h1 id="title"></h1>
+  </div>
+
+  <img id="question-img" alt="Question">
+
+  <div class="buttons">
+    <button onclick="check('A')">A</button>
+    <button onclick="check('B')">B</button>
+    <button onclick="check('C')">C</button>
+    <button onclick="check('D')">D</button>
+  </div>
+
+  <h2 id="result"></h2>
+  <h3 id="message"></h3>
+
+  <button id="reloader" hidden="true" onclick="window.location.reload();">NEXT</button>
+  <script src="streak.js"></script>
+  <script src="answers.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
